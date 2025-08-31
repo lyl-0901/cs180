@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 0: Becoming Friends with Your Camera</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a nice, clean font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* A little custom style to use the Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto max-w-4xl px-4 py-12">
+
+        <!-- Header Section -->
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Becoming Friends with Your Camera</h1>
+            <p class="text-lg text-gray-600 mt-2">CS180/280A, Project 0</p>
+            <p class="text-md text-gray-500 mt-1">Author: Caralyn Liu</p>
+        </header>
+
+        <main class="space-y-20">
+
+            <!-- Part 1: Selfie -->
+            <section>
+                <h2 class="text-3xl font-bold mb-6 border-b pb-2">Part 1: Selfie: The Wrong Way vs. The Right Way</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <!-- The "Wrong" Way -->
+                    <figure>
+                        <!-- TODO: Replace this placeholder with your close-up selfie image -->
+                        <img src="https://placehold.co/600x800/d1d5db/374151?text=Close-up+Selfie" alt="A distorted close-up selfie" class="rounded-lg shadow-lg w-full">
+                        <figcaption class="text-center mt-3 text-gray-600 italic">The "Wrong" Way: A selfie taken from very close up.</figcaption>
+                    </figure>
+                    <!-- The "Right" Way -->
+                    <figure>
+                        <!-- TODO: Replace this placeholder with your zoomed-in portrait -->
+                        <img src="https://placehold.co/600x800/d1d5db/374151?text=Zoomed-in+Portrait" alt="A more flattering portrait taken from a distance with zoom" class="rounded-lg shadow-lg w-full">
+                        <figcaption class="text-center mt-3 text-gray-600 italic">The "Right" Way: Standing back and zooming in.</figcaption>
+                    </figure>
+                </div>
+                <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Analysis</h3>
+                    <!-- TODO: Write your analysis here -->
+                    <p class="text-gray-700 leading-relaxed">
+                        在这里写下你的分析。思考一下为什么第二张照片看起来比第一张好得多。这与透视变形 (perspective distortion) 和焦距 (focal length) 有关。当你离得非常近时（广角效果），离镜头最近的物体（比如鼻子）会显得不成比例地大。而后退并使用变焦（长焦效果）会“压缩”面部特征，使其看起来更自然、更扁平，这通常被认为是更讨人喜欢的肖像效果。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Part 2: Architectural Perspective Compression -->
+            <section>
+                <h2 class="text-3xl font-bold mb-6 border-b pb-2">Part 2: Architectural Perspective Compression</h2>
+                 <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <!-- Zoomed In -->
+                    <figure>
+                        <!-- TODO: Replace this placeholder with your zoomed-in architectural photo -->
+                        <img src="https://placehold.co/800x600/d1d5db/374151?text=Zoomed-in+from+Far+Away" alt="A street view zoomed in from a distance" class="rounded-lg shadow-lg w-full">
+                        <figcaption class="text-center mt-3 text-gray-600 italic">Zoomed-in from a distance (Compressed Perspective).</figcaption>
+                    </figure>
+                    <!-- Walked Closer -->
+                    <figure>
+                        <!-- TODO: Replace this placeholder with your wide-angle photo from closer up -->
+                        <img src="https://placehold.co/800x600/d1d5db/374151?text=Wide-angle+from+Close" alt="The same street view taken from closer without zoom" class="rounded-lg shadow-lg w-full">
+                        <figcaption class="text-center mt-3 text-gray-600 italic">Wide-angle shot from a closer position.</figcaption>
+                    </figure>
+                </div>
+                <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Analysis</h3>
+                    <!-- TODO: Write your analysis here -->
+                    <p class="text-gray-700 leading-relaxed">
+                        在这里写下你的分析。思考为什么第一张照片看起来更“扁平”或“压缩”。当你使用长焦镜头从远处拍摄时，背景和前景之间的距离似乎被压缩了。远处的物体看起来比实际更大、更近。而在广角镜头下，近处的物体被夸大，远处的物体则迅速变小，创造出强烈的深度感和透视感。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Part 3: The Dolly Zoom -->
+            <section>
+                <h2 class="text-3xl font-bold mb-6 border-b pb-2">Part 3: The Dolly Zoom</h2>
+                <div class="flex justify-center">
+                    <figure class="w-full md:w-3/4">
+                        <!-- TODO: Replace this placeholder with your animated dolly zoom GIF -->
+                        <img src="https://placehold.co/800x450/d1d5db/374151?text=Your+Dolly+Zoom+GIF" alt="An animated GIF demonstrating the dolly zoom effect" class="rounded-lg shadow-xl w-full">
+                        <figcaption class="text-center mt-3 text-gray-600 italic">The Dolly Zoom, also known as the "Vertigo effect".</figcaption>
+                    </figure>
+                </div>
+                <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Process</h3>
+                    <!-- TODO: Briefly describe your process -->
+                    <p class="text-gray-700 leading-relaxed">
+                        在这里简单描述一下你的拍摄过程。例如，你选择了什么场景，拍摄了多少张照片，以及如何将它们合成为 GIF 动画的。这个效果的关键在于，当你身体（或相机）向后移动时，同时平滑地增加镜头的焦距（变焦），并始终保持主体在画面中的大小不变。这会造成一种奇特的效果：主体保持不变，但背景似乎在远离或靠近。
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-20 pt-8 border-t">
+            <p class="text-gray-500">Project page template created with Gemini.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
