@@ -15,6 +15,52 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        
+        /* Print styles to ensure proper layout when printing */
+        @media print {
+            /* Prevent page breaks inside grid containers and figures */
+            .grid, figure {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+            
+            /* Keep grid items together on the same page */
+            .grid {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 0.5rem !important;
+            }
+            
+            /* Ensure images don't take up full page width when printing */
+            figure img {
+                max-width: 100% !important;
+                height: auto !important;
+                max-height: 200px !important;
+                object-fit: contain !important;
+            }
+            
+            /* Reduce margins and padding for print */
+            section {
+                margin-bottom: 1rem !important;
+            }
+            
+            /* Specific styles for the architectural photos */
+            section:nth-child(2) .grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            
+            /* Make GIF smaller in print */
+            .dolly-zoom-container {
+                width: 50% !important;
+                margin: 0 auto !important;
+            }
+            
+            /* Prevent orphaned captions */
+            figcaption {
+                page-break-before: avoid;
+                break-before: avoid;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
